@@ -1,5 +1,5 @@
-#ifndef lc
-#define lc
+#ifndef sc
+#define sc
 
 #if (ARDUINO >= 100)
   #include "Arduino.h"
