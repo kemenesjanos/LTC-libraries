@@ -26,9 +26,9 @@ class LedControllerLib{
     void setColor(colors color);
     void setColor(bool red, bool green, bool blue);
   private:
-    const int _redPin = 3;
-    const int _greenPin = 2;
-    const int _bluePin = 1;
+    const uint8_t _redPin = 3;
+    const uint8_t _greenPin = 2;
+    const uint8_t _bluePin = 1;
   
 };
 

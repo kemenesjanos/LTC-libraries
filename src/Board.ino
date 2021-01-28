@@ -9,4 +9,5 @@ void setup() {
 
 void loop() {
   alma.setColor(White);
+  alma.setColor(true, true, false);
 }

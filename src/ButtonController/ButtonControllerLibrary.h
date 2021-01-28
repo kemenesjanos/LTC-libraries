@@ -1,6 +1,4 @@
-//Ha nincs definiálva az lc akkor...
 #ifndef lc
-//Definiálom
 #define lc
 
 #if (ARDUINO >= 100)
@@ -9,27 +7,12 @@
   #include "WProgram.h"
 #endif
 
-enum colors {
-  Red,
-  Green,
-  Blue,
-  Yellow,
-  Purple,
-  LightBlue,
-  White,
-  Nothing
-};
-
-class LedControllerLib{
+class ButtonControllerLib{
   public:
-    LedControllerLib();
-    void setColor(colors color);
-    void setColor(bool red, bool green, bool blue);
+    ButtonControllerLib();
+    bool isButtonPushed(int serial_number);
   private:
-    const int _redPin = 3;
-    const int _greenPin = 2;
-    const int _bluePin = 1;
-  
+    const uint8_t _inputPin = A0;
 };
 
 #endif
