@@ -12,7 +12,7 @@
 class SwitchesControllerLib{
   public:
     SwitchesControllerLib();
-    void setSwitch(int serial_number, uint8_t val);
+    void setSwitch(int serial_number, const uint8_t val);
   private:
     const uint8_t _serialDataPin = 9; // DS
     const uint8_t _clockPin = 10; // SHCP

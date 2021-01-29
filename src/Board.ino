@@ -1,16 +1,17 @@
 #include <Arduino.h>
-#include "LedController/LedControllerLibrary.h"
-#include "SensorsController/SensorsControllerLibrary.h"
-#include "JoystickController/JoystickControllerLibrary.h"
+#include "SwichesController/SwichesControllerLibrary.h"
 
-JoystickControllerLib banan;
+SwitchesControllerLib banan;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
+  
 }
 
 void loop() {
-  Serial.println( banan.getJoystickYCoord());
-  delay(500);
+  banan.setSwitch(4,LOW);
+  delay(1000);
+  banan.setSwitch(4,HIGH);
+  delay(1000);
 }
