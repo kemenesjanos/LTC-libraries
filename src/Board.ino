@@ -1,9 +1,9 @@
 #include <Arduino.h>
 #include "LedController/LedControllerLibrary.h"
 #include "SensorsController/SensorsControllerLibrary.h"
+#include "JoystickController/JoystickControllerLibrary.h"
 
-LedControllerLib alma;
-SensorsControllerLib korte;
+JoystickControllerLib banan;
 
 void setup() {
   // put your setup code here, to run once:
@@ -11,6 +11,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(korte.getSensorValue(2));
+  Serial.println( banan.getJoystickYCoord());
   delay(500);
 }
