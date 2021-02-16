@@ -1,17 +1,13 @@
 #include <Arduino.h>
-#include "SwichesController/SwichesControllerLibrary.h"
+#include "IrRemoteController/RemoteControllerLibrary.h"
 
-SwitchesControllerLib banan;
+RemoteControllerLib lib;
 
-void setup() {
-  // put your setup code here, to run once:
+void setup(){
   Serial.begin(9600);
-  
 }
 
-void loop() {
-  banan.setSwitch(4,LOW);
-  delay(1000);
-  banan.setSwitch(4,HIGH);
+void loop(){
+  Serial.println(lib.recivedButton());
   delay(1000);
 }
