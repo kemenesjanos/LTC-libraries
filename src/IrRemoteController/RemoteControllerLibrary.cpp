@@ -1,21 +1,25 @@
 #include "RemoteControllerLibrary.h"
 
 RemoteControllerLib::RemoteControllerLib(){
+  Serial.begin(9600);
+  irrecv = IRrecv(_recvPin);
   irrecv.enableIRIn();
 }
 
 uint32_t RemoteControllerLib::recivedHEX(){
+
   if(irrecv.decode(&results)){
+    irrecv.enableIRIn();
     unsigned long res = results.value;
     irrecv.resume();
     return res;
   }
-
   return 0;
 }
 
 buttons RemoteControllerLib::recivedButton(){
   buttons res= None;
+  irrecv.enableIRIn();
     if (irrecv.decode(&results)){
         if (results.value == 0XFFFFFFFF){
           results.value = _key_value;

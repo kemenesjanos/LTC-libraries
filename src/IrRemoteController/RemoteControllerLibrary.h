@@ -40,8 +40,8 @@ class RemoteControllerLib{
     uint32_t recivedHEX();
     buttons recivedButton();
   private:
-    const uint8_t _recvPin = 6;
-    unsigned long _key_value = 0;
+    const int _recvPin = 6;
+    buttons _key_value = None;
     IRrecv irrecv = IRrecv(_recvPin);
     decode_results results;
 };
