@@ -1,11 +1,7 @@
 #ifndef bc
 #define bc
 
-#if (ARDUINO >= 100)
   #include "Arduino.h"
-#else
-  #include "WProgram.h"
-#endif
 
 class ButtonControllerLib{
   public:
