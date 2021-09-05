@@ -7,7 +7,7 @@
   #include "WProgram.h"
 #endif
 
-#include "Stepper_shift/Stepper.h"
+#include "../Stepper_shift/Stepper.h"
 
 class MotorControllerLib{
   public:

@@ -1,4 +1,0 @@
-{
-    "sketch": "ButtonController\\alma.ino",
-    "board": "arduino:avr:uno"
-}

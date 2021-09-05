@@ -1,5 +1,5 @@
-#ifndef bc
-#define bc
+#ifndef scl
+#define scl
 
 #if (ARDUINO >= 100)
   #include "Arduino.h"

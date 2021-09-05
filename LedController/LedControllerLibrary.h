@@ -1,7 +1,7 @@
 //Ha nincs definiálva az lc akkor...
-#ifndef lc
+#ifndef lcl
 //Definiálom
-#define lc
+#define lcl
 
 #if (ARDUINO >= 100)
   #include <Arduino.h>

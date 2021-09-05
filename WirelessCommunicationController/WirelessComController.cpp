@@ -8,9 +8,9 @@ WirelessComController::WirelessComController(){
   _radio.stopListening();
 }*/
 
-// WirelessComController::WirelessComController(){
+WirelessComController::WirelessComController(){
   
-// }
+}
 
 void WirelessComController::sendMessage(String message){
   _radio.openWritingPipe(_address);
